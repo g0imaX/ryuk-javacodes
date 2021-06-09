@@ -1,48 +1,7 @@
 [
 {
-"title":"ActionBar Tittle",
-"code":"
-getActionBar().setTitle(Html.fromHtml("<font color='#78d68e'>Your Title</font>"));",
-"uid":"01",
-},
-{
-"title":"ActionBar SubTittle",
-"code":"getActionBar().setSubtitle("Your Subtitle");",
-"uid":"02",
-},
-{
-"title":"ActionBar BackHome",
-"code":"
-getActionBar().setDisplayHomeAsUpEnabled(true);
-/* */} 
-@Override 
-public boolean onMenuItemSelected(int featureId, MenuItem item) {
-int itemId = item.getItemId(); 
-switch (itemId) {
-case android.R.id.home:
-finish();
-break;
-}
-return true;
-",
-"uid":"03",
-},
-{
-"title":"ActionBar Color",
-"code":"
-//ActionBar Color
-ActionBar actionBar = getActionBar(); actionBar.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(Color.parseColor("#191919")));
-if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-    Window w = MainActivity.this.getWindow();
-    w.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-    w.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-    w.setStatusBarColor(Color.parseColor("#000000"));
-}",
-"uid":"04",
-},
-{
-"title":"ActionBar Hide",
-"code":" getActionBar().hide();",
-"uid":"05",
+"title" : "ActionBar",
+"code" : "HelloWorld",
+" uid" : "01",
 }
 ]
