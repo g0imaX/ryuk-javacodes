@@ -1,4 +1,8 @@
 [
 	{"code":"\ngetActionBar().setTitle(Html.fromHtml(\"\u003cfont color\u003d\u0027#78d68e\u0027\u003eYour Title\u003c/font\u003e\"));","title":"ActionBar Tittle","uid":"1"},
-	{"code":"getActionBar().setSubtitle(\"Your Subtitle\");","title":"ActionBar SubTittle","uid":"2"}
+	{"code":"getActionBar().setSubtitle(\"Your Subtitle\");","title":"ActionBar SubTittle","uid":"2"},
+	{"code":"\ngetActionBar().setDisplayHomeAsUpEnabled(true);\n/* */} \n@Override \npublic boolean onMenuItemSelected(int featureId, MenuItem item) {\nint itemId \u003d item.getItemId(); \nswitch (itemId) {\ncase android.R.id.home:\nfinish();\nbreak;\n}\nreturn true;\n","title":"ActionBar BackHome","uid":"3"},
+	{"code":"\n//ActionBar Color\nActionBar actionBar \u003d getActionBar(); actionBar.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(Color.parseColor(\"#191919\")));\nif (Build.VERSION.SDK_INT \u003e\u003d Build.VERSION_CODES.LOLLIPOP) {\n    Window w \u003d MainActivity.this.getWindow();\n    w.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);\n    w.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);\n    w.setStatusBarColor(Color.parseColor(\"#000000\"));\n}","title":"ActionBar Color","uid":"4"},
+	{"code":" getActionBar().hide();","title":"ActionBar Hide","uid":"5"},
+	{"code":" getActionBar().show();","title":"ActionBar Show","uid":"6"}
 ]
