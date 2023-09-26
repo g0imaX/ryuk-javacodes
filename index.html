@@ -1,88 +1,12 @@
 [
- {
-    "id": "1",
-    "title":"Hello World In Kotlin",
-    "code": "// Hello World Program fun main(args : Array<String>) { println(\"Hello, World!\") }",
-    "publisher": "Gojo",
-    "date": "1 Feb 2023"
-  },
-     {
-    "id": "2",
-    "title":"For Loop In Kotlin",
-    "code": "fun main(args: Array<String>) {
-
-    for (i in 1..5) {
-        println(i)
-    }
-}",
-    "publisher": "Gojo",
-    "date": "1 Feb 2023"
-  },
-     {
-    "id": "3",
-    "title": "Jump Java Code",
-    "code": "package JAVARuntime;
-
-// Useful imports
-import java.util.*;
-import java.text.*;
-import java.net.*;
-import java.math.*;
-import java.io.*;
-import java.nio.*;
-
-/**
- * @Author 
-*/
-public class enemy extends Component {
-    private Rigidbody enemybody;
-    public float speed;
-    public float health;
-    public SpatialObject enemy;
-    /// Run only once
-    @Override
-    public void start() {
-        enemybody = (Rigidbody) myObject.getPhysics().getPhysicsEntity();
-
-    }
-
-    /// Repeat every frame
-    @Override
-    public void repeat() {
-       enemyHealth();
-       followToPlayer();
-    }
-    
-    
-    
-    public void enemyHealth()
-    {
-        if(enemybody.colliderWithName(\"shoot bullet\"))
-        {
-            health = health -01;
-        }
-        
-        if(health <=0)
-        {
-            enemy.setEnabled(false);
-        }
-    }
-    
-    
-    public void followToPlayer()
-    {
-        enemy.getTransform().moveInSeconds(0,0,speed);
-    }
-    
-    
-    
-    
+{
+   "Visibility":" VISIBLE",
+    "Title":" New Update",
+    "Description":"Lots Of New Things Added",
+    "MainTextButton":"Update",
+    "Cancelable":"false",
+    " CancelButtonText":"Cancel",
+    "DownloadLink:"https://google.com",
+    "Version":"1.1"
 }
-
-
-Enemy script",
-    "publisher": "Gojo",
-    "date": "1 Feb 2023"
-  }
-     
 ]
